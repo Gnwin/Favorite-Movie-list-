@@ -11,13 +11,13 @@ class FavoriteMovieList extends Component {
     const movies = this.props.movie
     
    	const movieList = Object.values(movies).map(movie => movie.name);
-    const user_movie_list = profiles.map(profile => [users[profile.userID].name, movies[profile.favoriteMovieID].name]);
+    const userMovieList = profiles.map(profile => [users[profile.userID].name, movies[profile.favoriteMovieID].name]);
 
     
     return (
       <ol>
-      {movieList.map((mov)=>(
-      	<FavoriteMovieItem movi = {mov} uml = {user_movie_list}  />
+      {movieList.map((movieItem)=>(
+      	<FavoriteMovieItem movieName = {movieItem} usersMoviesList = {userMovieList}  />
 	  ))}
       </ol>
     )

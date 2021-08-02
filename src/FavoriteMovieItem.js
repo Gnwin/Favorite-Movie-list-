@@ -3,20 +3,20 @@ import React, { Component } from 'react'
 class FavoriteMovieItem extends Component {
   render(){
     
-    const movieName = this.props.movi;
-    const userml = this.props.uml;
-    let arr =  userml.filter(uml => movieName === uml[1]);
-    console.log(movieName);
-    console.log(arr);
+    const movieTitle = this.props.movieName;
+    const favoritedList = this.props.usersMoviesList;
+    let favoritedListArr =  favoritedList.filter(favoritedMovieItem => movieTitle === favoritedMovieItem[1]);
+    console.log(movieTitle);
+    console.log(favoritedListArr);
     
    
     return (
       <li>
-      	<h2>{movieName}</h2>
+      	<h2>{movieTitle}</h2>
 		<p>Liked By:</p>
 		<ul>
-      	{arr.map((ar)=>(
-          <li>{ar[0]}</li>
+      	{favoritedListArr.map((favoritedListItem)=>(
+          <li>{favoritedListItem[0]}</li>
     	))}
 		</ul>
   	  </li>

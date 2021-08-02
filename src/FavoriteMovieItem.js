@@ -5,7 +5,7 @@ class FavoriteMovieItem extends Component {
     
     const movieName = this.props.movi;
     const userml = this.props.uml;
-    let arr =  userml.filter((uml) => movieName === uml[1]);
+    let arr =  userml.filter(uml => movieName === uml[1]);
     console.log(movieName);
     console.log(arr);
     

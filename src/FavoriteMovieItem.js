@@ -26,6 +26,7 @@ class FavoriteMovieItem extends Component {
         )}
   	  </li>
     )
+
   }
 }
 

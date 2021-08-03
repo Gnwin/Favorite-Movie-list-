@@ -6,6 +6,7 @@ import FavoriteMovieItem from './FavoriteMovieItem.js'
 class FavoriteMovieList extends Component {
   render(){
     
+
     const users = this.props.user;
     const profiles = this.props.profile;
     const movies = this.props.movie;

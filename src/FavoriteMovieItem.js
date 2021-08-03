@@ -6,7 +6,7 @@ class FavoriteMovieItem extends Component {
     const movieTitle = this.props.movieName;
     const favoritedList = this.props.usersMoviesList;
     
-    let favoritedListArr = favoritedList.filter(favoritedMovieItem => movieTitle === favoritedMovieItem[1]);
+    const favoritedListArr = favoritedList.filter(favoritedMovieItem => movieTitle === favoritedMovieItem[1]);
 
     return (
       <li>                 

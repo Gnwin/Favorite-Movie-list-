@@ -30,4 +30,4 @@ class FavoriteMovieItem extends Component {
   }
 }
 
-export default FavoriteMovieItem
+export default FavoriteMovieItem;

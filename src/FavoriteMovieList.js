@@ -6,10 +6,9 @@ import FavoriteMovieItem from './FavoriteMovieItem.js'
 class FavoriteMovieList extends Component {
   render(){
     
-    console.log(this.props);
-    const users = this.props.user
-    const profiles = this.props.profile
-    const movies = this.props.movie
+    const users = this.props.user;
+    const profiles = this.props.profile;
+    const movies = this.props.movie;
     
    	const movieList = Object.values(movies).map(movie => movie.name);
     const userMovieList = profiles.map(profile => [users[profile.userID].name, movies[profile.favoriteMovieID].name]);
@@ -18,7 +17,7 @@ class FavoriteMovieList extends Component {
     return (
       <ol>
       {movieList.map((movieItem)=>(
-      	<FavoriteMovieItem movieName = {movieItem} usersMoviesList = {userMovieList}  />
+      	<FavoriteMovieItem movieName = {movieItem} usersMoviesList = {userMovieList} />
 	  ))}
       </ol>
     )
@@ -27,4 +26,4 @@ class FavoriteMovieList extends Component {
 
 
 
-export default FavoriteMovieList
+export default FavoriteMovieList;
